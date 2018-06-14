@@ -1,48 +1,42 @@
-header {
-  background-image: linear-gradient(-135deg, #6BBCFC 0%, #E537FC 100%);
-  color: var(--body-color);
-  padding: 10px 30px;
-  min-height: 100%;
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  .separator {
-    position: absolute;
-    width: 100%;
-    margin: 10px -30px;
-    background-color: white;
-    height: 2px;
-  }
-}
-
-#logo {
-  text-decoration: none;
-  display: inline-block;
-
-  img {
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 30px;
-    vertical-align: middle;
-  }
-}
-
+// header {
+//   background-image: linear-gradient(-135deg, #6BBCFC 0%, #E537FC 100%);
+//   color: var(--body-color);
+//   padding: 10px 30px;
+//   min-height: 100%;
+//   position: relative;
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   .separator {
+//     position: absolute;
+//     width: 100%;
+//     margin: 10px -30px;
+//     background-color: white;
+//     height: 2px;
+//   }
+// }
+// #logo {
+//   text-decoration: none;
+//   display: inline-block;
+//   img {
+//     width: 50px;
+//     border-radius: 50%;
+//     margin-right: 30px;
+//     vertical-align: middle;
+//   }
+// }
 /*main navigation*/
+
 #main-navigation {
-  width: 49%;
-  display: inline-block;
+  // width: 49%;
+  // display: inline-block;
   text-align: left;
   color: var(--body-color);
-
   ul {
-    list-style: none;
-    padding: 0px;
+    list-style: none; // padding: 0px;
     li {
       display: inline-block;
-
       a {
         color: var(--body-color);
         text-decoration: none;
@@ -54,5 +48,85 @@ header {
         transition: 0.3s ease all;
       }
     }
+  }
+}
+
+a {
+  color: var(--body-color);
+  text-decoration: none;
+  padding: 20px 20px;
+  margin-right: 10px;
+}
+
+a:hover {
+  background: rgba(255, 255, 255, .50);
+  border-radius: 3px;
+  transition: 0.3s ease all;
+}
+
+.logo {
+  height: 48px;
+  margin: 0 4px 3px 0;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+    vertical-align: middle;
+
+}
+
+.docs-navbar,
+.docs-navbar-header {
+  // background-color: var(--main-color);
+  background-image: linear-gradient(-135deg, #6BBCFC 0%, #E537FC 100%); // color: white;
+}
+
+.docs-navbar-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  // padding: 8px 16px;
+}
+
+.docs-navbar-header > a {
+  margin-left: auto;
+}
+.flex-spacer {
+  flex-grow: 1;
+}
+
+.docs-navbar-link {
+  text-decoration: inherit;
+  flex: 1;
+}
+
+.docs-navbar {
+  display: none;
+}
+
+.docs-navbar-show-small {
+  display: none;
+}
+
+/**
+  * Rules for when the device is detected to be a small screen.
+  * Moves content two rows instead of one.
+  */
+
+@media (max-width: 720px) {
+  .docs-navbar-hide-small {
+    display: none;
+  }
+  .docs-navbar-show-small {
+    display: block;
+  }
+  .docs-navbar {
+    display: flex;
+  }
+  .docs-navbar--github-logo {
+    margin: 0;
   }
 }
