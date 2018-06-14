@@ -1,17 +1,4 @@
-<!-- <header id="site-header">
-  <a id="logo" href="#">
-    <img src="http://fakeimg.pl/50/" alt="Avatar">
-  </a>
-  <nav id="main-navigation">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</header> -->
 <header id="site-header">
-
   <nav class="docs-navbar-header">
     <a class="docs-button" routerLink="/">
       <img class="logo" src="http://fakeimg.pl/50/" alt="Avatar">
@@ -19,11 +6,13 @@
     </a>
     <!-- Separador -->
     <div class="flex-spacer"></div>
-    <a class="docs-button docs-navbar-hide-small">About </a>
-    <a class="docs-button docs-navbar-hide-small">Skills </a>
-    <a class="docs-button docs-navbar-hide-small">Projects </a>
-    <a class="docs-button docs-navbar-hide-small">Achievements </a>
-    <a class="docs-button docs-navbar-hide-small">Contact </a>
+    <div class="links">
+      <a class="docs-button docs-navbar-hide-small">About </a>
+      <a class="docs-button docs-navbar-hide-small">Skills </a>
+      <a class="docs-button docs-navbar-hide-small">Projects </a>
+      <a class="docs-button docs-navbar-hide-small">Achievements </a>
+      <a class="docs-button docs-navbar-hide-small">Contact </a>
+    </div>
 
     <div mat-icon-button class="docs-button docs-navbar-show-small">
       <button mat-icon-button [matMenuTriggerFor]="menu">
