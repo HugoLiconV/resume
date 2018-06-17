@@ -25,87 +25,88 @@ $light-gray: #D7D1DA;
   --margin: 20px;
 }
 
-html, .root {
-  font-size: var(--base-font-size);
-  line-height: var(--line-height);
+// html, .root {
+//   font-size: var(--base-font-size);
+//   line-height: var(--line-height);
+//   box-sizing: border-box;
+//   margin: 0;
+// }
+
+// body, .article {
+//   font-family: var(--secondary-font);
+//   font-size: 1rem;
+//   line-height: 1.5rem;
+//   /* max-width: 560px; */
+//   // margin: auto;
+// }
+
+// h1, h2, h3, h4, h5 {
+//   font-family: var(--main-font);
+// }
+
+// h1, .h1 {
+//   font-size: 3.4rem;
+//   line-height: 4.5rem;
+//   margin-top: 1.5rem;
+//   margin-bottom: 3rem;
+// }
+// h2, .h2 {
+//   font-size: 2.25rem;
+//   line-height: 3rem;
+//   margin-top: 1.5rem;
+//   margin-bottom: 1.5rem;
+// }
+// h3, .h3 {
+//   font-size: 1.5rem;
+//   line-height: 1.5rem;
+//   margin-top: 1.5rem;
+//   margin-bottom: 0rem;
+// }
+// h4, .h4 {
+//   font-size: 1rem;
+//   line-height: 1.5rem;
+//   margin-top: 1.5rem;
+//   margin-bottom: 0rem;
+// }
+// h5, .h5 {
+//   font-size: 1rem;
+//   line-height: 1.5rem;
+//   margin-top: 1.5rem;
+//   margin-bottom: 0rem;
+// }
+// p, ul, ol, pre, table, blockquote {
+//   margin-top: 0rem;
+//   margin-bottom: 1.5rem;
+// }
+// ul ul, ol ol, ul ol, ol ul {
+//   margin-top: 0rem;
+//   margin-bottom: 0rem;
+// }
+
+// /* Let's make sure all's aligned */
+// hr, .hr {
+//   border: 1px solid;
+//   margin: -1px 0;
+// }
+// a, b, i, strong, em, small, code {
+//   line-height: 0;
+// }
+// sub, sup {
+//   line-height: 0;
+//   position: relative;
+//   vertical-align: baseline;
+// }
+// sup {
+//   top: -0.5em;
+// }
+// sub {
+//   bottom: -0.25em;
+// }
+
+
+* {
   box-sizing: border-box;
 }
-body, .article {
-  font-family: var(--secondary-font);
-  font-size: 1rem;
-  line-height: 1.5rem;
-  /* max-width: 560px; */
-  margin: auto;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: var(--main-font);
-}
-
-h1, .h1 {
-  font-size: 3.4rem;
-  line-height: 4.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
-}
-h2, .h2 {
-  font-size: 2.25rem;
-  line-height: 3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-h3, .h3 {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
-}
-h4, .h4 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
-}
-h5, .h5 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
-}
-p, ul, ol, pre, table, blockquote {
-  margin-top: 0rem;
-  margin-bottom: 1.5rem;
-}
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-}
-
-/* Let's make sure all's aligned */
-hr, .hr {
-  border: 1px solid;
-  margin: -1px 0;
-}
-a, b, i, strong, em, small, code {
-  line-height: 0;
-}
-sub, sup {
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-
-
-// * {
-//   box-sizing: border-box;
-//   font-family: $font;
-// }
 
 // body, html {
 //   margin: 0;
@@ -119,30 +120,7 @@ sub {
 
 
 /*main content*/
-.hero {
-  text-align: center;
-}
 
-.hero-content {
-  color: #fff;
-  padding-top: 130px;
-  line-height: 1;
-}
-
-.hero-title {
-  margin: 0;
-  font-size: 100px;
-}
-
-.hero-content p {
-  font-size: 50px;
-  margin-bottom: 60px;
-}
-
-.hero-content img{
-  border-radius: 50%;
-  max-width: 220px;
-}
 
   /*site section styling*/
 .site-section {
@@ -161,141 +139,6 @@ sub {
   text-transform: uppercase;
   font-weight: 300;
   color: #777;
-}
-
-// cards
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.btn {
-  background-color: white;
-  border: none;//1px solid #cccccc;
-  color: $dark-gray;
-  font-size: 1rem;
-  padding: 0.5rem;
-  text-transform: lowercase;
-
-  &:hover{
-    background-color: rgba(0, 0, 0, .1);
-    border-radius: $border;
-  }
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-.cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.cards-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem;
-}
-@media (min-width: 40rem) {
-  .cards-item {
-    width: 50%;
-  }
-}
-@media (min-width: 56rem) {
-  .cards-item {
-    width: 33.3333%;
-  }
-}
-.card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-}
-
-.card-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1rem;
-}
-.card-image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-}
-.card-image::before {
-  content: "";
-  display: block;
-  padding-top: 56.25%;
-}
-@media (min-width: 40rem) {
-  .card-image::before {
-    padding-top: 66.6%;
-  }
-}
-.card-image-portfolio {
-  background-image: url(https://goo.gl/utd5j8);
-}
-.card-image-tic {
-  background-image: url(http://i.imgur.com/MsvkqFW.png);
-}
-.card-image-tribute {
-  background-image: url(http://i.imgur.com/Z4kUtBr.png?1);
-}
-.card-image-quote {
-  background-image: url(https://goo.gl/SH8ANu);
-}
-.card-title {
-  color: #696969;
-  font-size: 1.25rem;
-  font-weight: 300;
-  // letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.card-text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-}
-
-.card-details{
-  color: $light-gray;
-  font-weight: 100;
 }
 
 body { margin: 0; }

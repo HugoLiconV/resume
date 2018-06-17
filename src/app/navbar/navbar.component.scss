@@ -1,31 +1,21 @@
-// header {
-//   background-image: linear-gradient(-135deg, #6BBCFC 0%, #E537FC 100%);
-//   color: var(--body-color);
-//   padding: 10px 30px;
-//   min-height: 100%;
-//   position: relative;
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-//   .separator {
-//     position: absolute;
-//     width: 100%;
-//     margin: 10px -30px;
-//     background-color: white;
-//     height: 2px;
-//   }
-// }
-// #logo {
-//   text-decoration: none;
-//   display: inline-block;
-//   img {
-//     width: 50px;
-//     border-radius: 50%;
-//     margin-right: 30px;
-//     vertical-align: middle;
-//   }
-// }
+header {
+  background-image: linear-gradient(-135deg, #6BBCFC 0%, #E537FC 100%);
+  color: var(--body-color);
+  padding: 10px 30px;
+  min-height: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .separator {
+    position: absolute;
+    width: 100%;
+    margin: 10px -30px;
+    background-color: white;
+    height: 2px;
+  }
+}
 /*main navigation*/
 
 .links {
@@ -57,7 +47,7 @@
 .docs-navbar,
 .docs-navbar-header {
   // background-color: var(--main-color);
-  background-image: linear-gradient(-135deg, #6BBCFC 0%, #E537FC 100%); // color: white;
+  // background-image: linear-gradient(-135deg, #6BBCFC 0%, #E537FC 100%); // color: white;
 }
 
 .docs-navbar-header {
@@ -86,6 +76,31 @@
 
 .docs-navbar-show-small {
   display: none;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-content {
+  color: #fff;
+  padding-top: 130px;
+  line-height: 1;
+}
+
+.hero-title {
+  margin: 0;
+  // font-size: 100px;
+}
+
+.hero-content p {
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.hero-content img{
+  border-radius: 50%;
+  max-width: 220pxs;
 }
 
 /**
