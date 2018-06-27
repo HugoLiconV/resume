@@ -1,4 +1,4 @@
-import { Skill } from '../_models/index';
+import { Skill } from '../_models/';
 
 export const SKILLS: Skill[] = [
   {

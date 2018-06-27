@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
-
+import { Project } from '../_models';
+import { PROJECTS } from '../_data';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -8,13 +8,11 @@ import * as $ from 'jquery';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
-
+  projects: Project[];
+  constructor() {
+  }
   ngOnInit() {
-    $('.card').click(
-      function (e) {
-        $(this).toggleClass('flipped');
-    });
+    this.projects = PROJECTS;
   }
 
 }

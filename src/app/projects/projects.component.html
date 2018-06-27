@@ -4,66 +4,8 @@
   </div>
 
   <div class="cards-container">
-    <!--      portfolio  -->
-    <div class="card">
-      <!-- <div class="front"> -->
-        <div class="card-image card-image-portfolio"></div>
-        <div class="card-content">
-          <p class="card-details">Details</p>
-          <div class="card-title">Flex</div>
-          <p class="card-text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink
-            and flex-basis) are optional. Default is 0 1 auto. </p>
 
-          <button class="btn btn-block card-btn">Visit</button>
-        </div>
-      <!-- </div> -->
-      <!-- <div class="back"> -->
-
-      <!-- </div> -->
-    </div>
-    <!--   tic-tac-toe     -->
-    <div class="card">
-      <!-- <div class="card"> -->
-        <div class="card-image card-image-tribute"></div>
-        <div class="card-content">
-          <p class="card-details">Details</p>
-          <div class="card-title">Flex</div>
-          <p class="card-text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink
-            and flex-basis) are optional. Default is 0 1 auto. </p>
-
-          <button class="btn btn-block card-btn">Visit</button>
-        </div>
-      <!-- </div> -->
-    </div>
-    <!--    tribute page    -->
-    <div class="card">
-      <!-- <div class="card"> -->
-        <div class="card-image card-image-tic"></div>
-        <div class="card-content">
-          <p class="card-details">Details</p>
-          <div class="card-title">Flex</div>
-          <p class="card-text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink
-            and flex-basis) are optional. Default is 0 1 auto. </p>
-
-          <button class="btn btn-block card-btn">Visit</button>
-        </div>
-      <!-- </div> -->
-    </div>
-    <!--   quote     -->
-    <div class="card">
-      <!-- <div class="card"> -->
-        <div class="card-image card-image-quote"></div>
-        <div class="card-content">
-          <p class="card-details">Details</p>
-          <div class="card-title">Flex</div>
-          <p class="card-text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink
-            and flex-basis) are optional. Default is 0 1 auto. </p>
-
-          <a href="www.google.com" target="_blank">
-            <button class="btn btn-block card-btn">Visit</button>
-          </a>
-        </div>
-      <!-- </div> -->
-    </div>
+  <app-card *ngFor="let project of projects" [project]="project"></app-card>
   </div>
+
 </section>

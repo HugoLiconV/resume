@@ -14,6 +14,7 @@ import {
   MatIconModule,
   MatMenuModule,
   MatButtonModule } from '@angular/material';
+import { CardComponent } from './card/card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import {
     SkillsComponent,
     ProjectsComponent,
     AchievementsComponent,
-    ContactComponent
+    ContactComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
