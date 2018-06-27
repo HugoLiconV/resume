@@ -1,16 +1,11 @@
-.cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between; // align-items: center;
-  // margin: 0;
-  padding: 0; // padding: 1rem;
-}
-
 .card {
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   margin: 1%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .card-image::before {
@@ -27,10 +22,6 @@
   border-top-right-radius: 0.25rem;
   overflow: hidden;
   position: relative;
-  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
 }
 
 .card-image-portfolio {
@@ -77,14 +68,14 @@
 
 .btn {
   background-color: white;
-  border: none; //1px solid #cccccc;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
   color: var(--body-color);
   font-size: 1rem;
   padding: 0.5rem;
   text-transform: lowercase;
   &:hover {
     background-color: rgba(0, 0, 0, .1);
-    border-radius: 8px
   }
 }
 
