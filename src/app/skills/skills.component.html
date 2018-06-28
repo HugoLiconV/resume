@@ -1,3 +1,6 @@
-<p>
-  skills works!
-</p>
+<section class="site-section">
+  <div class="section-header">
+    <h2>Skills</h2>
+  </div>
+  <app-skill-graph *ngFor="let skill of skills" [skill]="skill"></app-skill-graph>
+</section>

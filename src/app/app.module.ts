@@ -16,6 +16,7 @@ import {
   MatButtonModule } from '@angular/material';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { AchievementCardComponent } from './achievement-card/achievement-card.component';
+import { SkillGraphComponent } from './skill-graph/skill-graph.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { AchievementCardComponent } from './achievement-card/achievement-card.co
     AchievementsComponent,
     ContactComponent,
     ProjectCardComponent,
-    AchievementCardComponent
+    AchievementCardComponent,
+    SkillGraphComponent
   ],
   imports: [
     BrowserModule,
