@@ -14,7 +14,7 @@ import {
   MatIconModule,
   MatMenuModule,
   MatButtonModule } from '@angular/material';
-import { CardComponent } from './card/card.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 import { AchievementCardComponent } from './achievement-card/achievement-card.component';
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { AchievementCardComponent } from './achievement-card/achievement-card.co
     ProjectsComponent,
     AchievementsComponent,
     ContactComponent,
-    CardComponent,
+    ProjectCardComponent,
     AchievementCardComponent
   ],
   imports: [
