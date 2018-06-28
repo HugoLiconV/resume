@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Achievement } from '../_models';
+import { ACHIEVEMENTS } from '../_data';
 
 @Component({
   selector: 'app-achievements',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AchievementsComponent implements OnInit {
 
-  constructor() { }
+  achievements: Achievement[];
+  constructor() {
+    this.achievements = ACHIEVEMENTS;
+  }
 
   ngOnInit() {
   }

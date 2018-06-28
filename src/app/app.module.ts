@@ -15,6 +15,7 @@ import {
   MatMenuModule,
   MatButtonModule } from '@angular/material';
 import { CardComponent } from './card/card.component';
+import { AchievementCardComponent } from './achievement-card/achievement-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { CardComponent } from './card/card.component';
     ProjectsComponent,
     AchievementsComponent,
     ContactComponent,
-    CardComponent
+    CardComponent,
+    AchievementCardComponent
   ],
   imports: [
     BrowserModule,
