@@ -32,7 +32,7 @@
 }
 
 .card-details {
-  color: var(--body-color);
+  color: var(--acent-color);
   font-weight: 100;
 }
 
@@ -41,6 +41,15 @@
   font-size: 1.25rem;
   font-weight: 300; // letter-spacing: 2px;
   text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.card-text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  // line-height: 1.5;
+  // margin-bottom: 1.25rem;
+  color: var(--body-color)
 }
 
 .btn {
@@ -60,14 +69,6 @@
   display: block;
   width: 100%;
 }
-
-.card-text {
-  flex: 1 1 auto;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-}
-
 @media (min-width: 40rem) {
   .card-image::before {
     padding-top: 66.6%;
