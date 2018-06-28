@@ -14,4 +14,11 @@ export class CardComponent implements OnInit {
   ngOnInit() {
   }
 
+  getImageUrl(): string {
+    return `url('${this.project.imgUrl}')`;
+  }
+
+  onNavigate() {
+    window.open(this.project.projectUrl, '_blank');
+  }
 }
