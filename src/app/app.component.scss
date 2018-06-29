@@ -14,3 +14,12 @@ main {
 header, main, app-contact{
   flex-shrink: 0;
 }
+
+app-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #fff;
+}
