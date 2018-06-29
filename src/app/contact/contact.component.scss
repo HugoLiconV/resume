@@ -1,0 +1,13 @@
+.container{
+  background-color: red;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+a {
+  margin: 0 1rem;
+}
