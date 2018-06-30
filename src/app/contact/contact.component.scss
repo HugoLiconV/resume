@@ -47,28 +47,32 @@ $social-width: 20%;
     color: white;
     text-align: center;
     font-weight: bold;
-    transition: all 0.03ms;
+    transition: 0.3s ease all;
     &:hover {
       background-color: #222;
-      transition: all 0.03ms;
+      transition: 0.3s ease all;
     }
+  }
+
+  img {
+    width: 20px;
   }
 }
 
 .linked {
-  background-color: $dk-blue;
+  background-color: $green;
   font-size: $social-size;
   width: $social-width;
 }
 
 .face {
-  background-color: $blue;
+  background-color: $green;
   font-size: $social-size;
   width: $social-width;
 }
 
 .tweet {
-  background-color: $light-blue;
+  background-color: $green;
   font-size: $social-size;
   width: $social-width;
 }
