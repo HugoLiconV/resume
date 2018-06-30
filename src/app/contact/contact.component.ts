@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactItem } from '../_models';
+import { CONTACT_ITEMS } from '../_data';
 
 @Component({
   selector: 'app-contact',
@@ -7,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
-
+  contactItems: ContactItem[];
+  constructor() {
+    this.contactItems = CONTACT_ITEMS;
+  }
   ngOnInit() {
   }
 
