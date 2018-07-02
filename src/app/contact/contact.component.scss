@@ -3,15 +3,15 @@
 $dk-blue: #1e83ae;
 $blue: #3d5b94;
 $light-blue: #3dacdd;
-$green: #6dcd9a;
+// $green: #e51a4c;
 $social-size: 1.2em;
 $social-width: 20%;
 .container {
-  background-color: gray;
+  // background-color: gray;
   width: 100%; // padding: 10px;
   // margin: 2em 0;
   height: 70px;
-  background-color: #999;
+  background-color: #999; // background-color: ;
   .copyright {
     width: 50%;
     float: left;
@@ -37,8 +37,19 @@ $social-width: 20%;
 .social {
   width: 50%;
   float: right;
+  background-color: #999;
+  height: 100%; // Flex
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
   @media (max-width: 600px) {
     width: 100%;
+  }
+  app-contact-item:hover {
+    background-color: #222;
+    transition: 0.3s ease all;
   }
   a {
     float: left;
@@ -53,36 +64,16 @@ $social-width: 20%;
       transition: 0.3s ease all;
     }
   }
-
   img {
     width: 20px;
   }
 }
 
-.linked {
-  background-color: $green;
-  font-size: $social-size;
-  width: $social-width;
-}
-
-.face {
-  background-color: $green;
-  font-size: $social-size;
-  width: $social-width;
-}
-
-.tweet {
-  background-color: $green;
-  font-size: $social-size;
-  width: $social-width;
-}
-
 .support {
-  background-color: $green;
+  // background-color: $green;
   font-size: 0.8em;
   width: 40%;
 }
-
 
 .icons {
   display: flex;
@@ -99,3 +90,4 @@ $social-width: 20%;
 app-contact-item {
   margin: 0 1rem;
 }
+

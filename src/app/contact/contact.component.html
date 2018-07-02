@@ -3,14 +3,18 @@
     <p>Coded by Hugo Licón - Last Update: June 2018</p>
   </div>
   <div class="social">
-    <a href="#" class="support">Contact Us</a>
-    <a href="#" class="face"><img src="./assets/github.svg" alt=""></a>
-    <a href="#" class="tweet">t</a>
-    <a href="#" class="linked">in</a>
+    <a href="#" class="support" >Contact Us</a>
+    <!-- <app-contact-item [style.width]="getItemWidth()" *ngFor="let contactItem of contactItems" [contactItem]="contactItem"></app-contact-item> -->
+    <a [href]="contactItem.link" [style.width]="getItemWidth()" *ngFor="let contactItem of contactItems">
+      <img [src]="contactItem.iconUrl" [alt]="contactItem.title + ' url'">
+      <!-- <p>{{contactItem.title}}</p> -->
+    </a>
+    <!--<a href="#" class="tweet">t</a>
+    <a href="#" class="linked">in</a> -->
   </div>
-  <!-- <div class="icons">
-    <app-contact-item *ngFor="let contactItem of contactItems" [contactItem]="contactItem"></app-contact-item>
-  </div>
+   <!-- <div class="social">
+  </div> -->
+  <!--
   <div class="right">
     Last Update: June 2018
   </div> -->
