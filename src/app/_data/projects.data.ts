@@ -2,52 +2,48 @@ import { Project } from '../_models';
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Página web del Albergue San Vicente',
+    title: 'SAN VICENTE SHELTER WEB PAGE',
     technologies: 'Angular, Node, MongoDB',
-    description: `Página web para el albergue San Vicente de Paul la cual tiene
-    como objetivo mostrar los proyectos, donaciones y eventos del albergue. Se
-    utilizó Angular en el front-end y se creo un API Rest con Node.js para el
-    manejo de la información así como para la autenticación, mediante JWT, en el
-    modulo de administración.`,
+    description: ` Website for San Vicente de Paul Shelter which have the objective
+    of showing the projects, donations and events of the shelter. Angular was used in
+    the front-end and an API Rest was created with Node.js for the management of the
+    information as well as for the authentication, through JWT, in the administration module.`,
     imgUrl: './assets/vicentinas.png',
     projectUrl: 'https://vicentinaschihuahua.herokuapp.com/#/home'
   }, {
     title: 'Job Board',
     technologies: 'Node.JS, MongoDB, Angular, Android',
-    description: `JobBoard es una plataforma que permite a los estudiantes buscar
-    empresas para realizar sus residencias profesionales.
+    description: `JobBoard is a platform that allows students to search for companies
+    to perform their professional residencies.
 
-    La plataforma consiste en un API Rest se encarga de manejar los perfiles de
-    los estudiantes y de las empresas, las vacantes, y el inicio de sesión
-    utilizando JWT; Una aplicación en Android para que los estudiantes puedan
-    visualizar las vacantes, empresas y administrar su perfil; y una página web
-    para que las empresas publiquen las vacantes.`,
+    The platform consists of: an API Rest responsible for managing the profiles of
+    students and companies, vacancies, and the login using JWT; An application on Android so
+    students can visualize vacancies, companies and manage their profile; and a website
+    for companies to publish vacancies.`,
     imgUrl: './assets/jobboard.png',
     projectUrl: 'https://github.com/HugoLiconV/JobBoard-API-Rest'
   }, {
-    title: 'Control de Acceso en Arduino',
+    title: 'Arduino RFID Access Control System',
     technologies: 'Arduino',
-    description: `Control de Acceso para el uso de una lavadora industrial en el
-    albergue San Vicente. El sistema utiliza RFID para permitir el uso de las
-    lavadoras sólo a personal autorizado, además mediante un API-Rest se encarga
-    de llevar un registro de uso para posteriormente poder visualizarlo en la
-    página web del albergue.`,
+    description: `Access Control for the use of an industrial washing machine in
+    San Vicente Shelter. The system uses RFID to allow the use of washing machines
+    to only authorized personnel, also through an API-Rest, it is responsible for
+    keeping a record of use to later be able to view it on the shelter website.`,
     imgUrl: './assets/arduino.jpg',
     projectUrl: 'https://github.com/HugoLiconV/cerradura-arduino'
   }, {
     title: 'ToDo App',
     technologies: 'Android',
-    description: `Aplicación de tareas que, mediante el tiempo que dispones en
-    el día, la prioridad y la duración de las tareas, te dice cuales puedes
-    realizar y en que orden.`,
+    description: `A ToDo App that, through the time you have available in the day,
+    the priority, and the duration of the tasks, tells you what you can do and in what order.`,
     imgUrl: './assets/todo.png',
     projectUrl: 'https://bitbucket.org/HugoLiconV/todo_project/src/master/'
   }, {
-    title: 'Messenger Bot para encuesta de egresados del TecNM',
+    title: 'MESSENGER BOT FOR TECNM GRADUATE SURVEY',
     technologies: 'ChatFuel (Messenger Bot), AngularJS, MongoDB',
-    description: `Messenger Bot para realizar la encuesta de egresados de los
-    institutos pertenecientes al Tecnológico Nacional de Mexico. Los datos
-    obtenidos del bot se manejan con un API Rest y se visualizan en una página web.`,
+    description: `A Messenger Bot that has as objective survey the graduates of
+    the institutes belonging to the Tecnológico Nacional de México. The data obtained
+    from the bot are handled with an API Rest and displayed on a web page.`,
     imgUrl: './assets/egresados.png',
     projectUrl: 'https://peaceful-mesa-57140.herokuapp.com/#!/'
   }

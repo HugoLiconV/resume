@@ -7,7 +7,7 @@ export const CONTACT_ITEMS: ContactItem[] = [
     iconUrl: './assets/github.svg',
   }, {
     title: 'Email',
-    link: 'mailto:someone@example.com?Subject=Hello%20again',
+    link: 'mailto:hugo_val28@hotmail.com',
     iconUrl: './assets/email.svg',
   }, {
     title: 'LinkedIn',
