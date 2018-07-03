@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
 /* Landing container */
+
 #landing {
   height: 90vh;
   background-position: center;
@@ -10,7 +11,7 @@
   margin-top: 10vh
 }
 
-.grid-container {
+f .grid-container {
   height: 100%;
   padding: 2rem;
   display: grid;
@@ -23,8 +24,7 @@
 
 .grid-container>div {
   // background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  // padding: 20px 0;
+  text-align: center; // padding: 20px 0;
   font-size: 30px;
 }
 
@@ -48,13 +48,34 @@
   }
 }
 
+.container {
+  padding: 1rem;
+  height: 100%;
+}
+
+.info {
+  width: 50%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+  float: left;
+  height: 100%;
+  text-align: center;
+}
+
 .about {
+  width: 50%;
+  @media (max-width: 600px) {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  float: right;
+  height: 100%;
   display: flex;
   justify-content: center;
   /* align horizontal */
   align-items: center;
   padding: 1rem;
-
   p {
     line-height: 2rem;
     font-size: 1.8rem;
