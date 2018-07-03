@@ -1,9 +1,9 @@
 <div class="container" id="contact">
   <div class="details">
-    <p>Coded with <app-heart></app-heart> by Hugo Licón - Last Update: June 2018</p>
+    <p>Coded with<app-heart></app-heart>by Hugo Licon - Last Update: June 2018</p>
   </div>
   <div class="social">
-    <a href="#" class="support" >Contact Me</a>
+    <a class="support" >Contact Me</a>
     <a [href]="contactItem.link" [style.width]="getItemWidth()" *ngFor="let contactItem of contactItems">
       <img [src]="contactItem.iconUrl" [alt]="contactItem.title + ' url'">
     </a>
