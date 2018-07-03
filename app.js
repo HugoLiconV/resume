@@ -1,17 +1,17 @@
-const express = require('express')
-const http = require('http')
-const path = require('path')
+const express= require('express'),
+	 path = require('path');
 
-const app = express();
+const app =express();
 
-app.use(express.static(path.join(__dirname, 'dist')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/index.html'));
+app.use(express.static('./dist/resume-app'));
+
+app.get('/*', (req,res)=>{
+
+res.sendFile(path.join(__dirname,'/dist/resume-app/index.html'));
+
 });
 
-const port = process.env.PORT || '3000';
-app.set('port', port);
-
-const server = http.createServer(app);
-server.listen(port, () => console.log(`API running on localhost:${port}`));
+app.listen(process.env.PORT || 8080, ()=>{
+console.log('Server started');
+})
