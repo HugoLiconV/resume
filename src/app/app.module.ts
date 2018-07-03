@@ -37,7 +37,7 @@ import { HeartComponent } from './heart/heart.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
