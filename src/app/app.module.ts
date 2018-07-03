@@ -17,7 +17,7 @@ import {
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { AchievementCardComponent } from './achievement-card/achievement-card.component';
 import { SkillGraphComponent } from './skill-graph/skill-graph.component';
-import { ContactItemComponent } from './contact-item/contact-item.component';
+import { HeartComponent } from './heart/heart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,7 @@ import { ContactItemComponent } from './contact-item/contact-item.component';
     ProjectCardComponent,
     AchievementCardComponent,
     SkillGraphComponent,
-    ContactItemComponent
+    HeartComponent
   ],
   imports: [
     BrowserModule,

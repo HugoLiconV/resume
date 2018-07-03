@@ -1,24 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
 /* Landing container */
-
 #landing {
   height: 90vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -1; // background-color: white;
+  z-index: -1;
   margin-top: 10vh
 }
 
-// header {
-//   display: grid;
-// }
-// .intro {
-//   display: grid;
-//   /* background-color: var(--main-color); */
-//   padding-bottom: 80px;
-// }
 .grid-container {
   height: 100%;
   padding: 2rem;
@@ -53,6 +44,7 @@
     margin: 0;
     font-size: 2.4rem;
     line-height: 3rem;
+    color: var(--section-title-color);
   }
 }
 
@@ -68,51 +60,7 @@
     font-size: 1.8rem;
     font-weight: 100;
     letter-spacing: 1px;
-      text-align: left;
+    text-align: left;
+    color: var(--body-color);
   }
-  /* align vertical */
-}
-
-.intro h1 {
-  font-family: var(--main-font);
-  margin-top: 30vh;
-  color: var(--main-color);
-  font-size: 3.5rem;
-  text-align: center;
-}
-
-.intro .graphic-container {
-  padding-top: 80px;
-  text-align: center;
-}
-
-.intro .graphic-container img {
-  width: 1090px;
-}
-
-.intro .strapline-container {
-  max-width: 620px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.intro .strapline-container p {
-  margin-top: 60px;
-}
-
-.intro .strapline-container p {
-  font-family: "Rubik-Light", sans-serif;
-  font-size: 26px;
-  line-height: 1.31;
-  text-align: center;
-  color: var(--title-color);
-}
-
-.intro .strapline-container img {
-  margin-top: 60px;
-  transform: rotate(90deg);
-}
-
-.arrow {
-  fill: #ff3;
 }

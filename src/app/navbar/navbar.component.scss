@@ -1,9 +1,7 @@
 .links {
   a {
-    // color: var(--body-color);
     text-decoration: none;
     padding: 15px 20px;
-    // margin-right: 10px;
   }
   a:hover {
     background: rgba(255, 255, 255, .50);
@@ -13,10 +11,9 @@
 }
 
 .logo {
-    height: 48px;
+  height: 48px;
   margin: 0 4px 3px 0;
   vertical-align: middle;
-  // height: 48px;
   margin: 0 4px 3px 0;
   vertical-align: middle;
   text-decoration: none;
@@ -30,7 +27,6 @@
 .docs-navbar,
 .docs-navbar-header {
   background-color: var(--main-color);
-  // background-image: linear-gradient(-135deg, #6BBCFC 0%, #E537FC 100%); // color: white;
 }
 
 .docs-navbar-header {
@@ -40,7 +36,7 @@
   padding: 8px 16px;
 }
 
-.docs-navbar-header>a {
+.docs-navbar-header > a {
   margin-left: auto;
 }
 
@@ -48,42 +44,8 @@
   flex-grow: 1;
 }
 
-.docs-navbar-link {
-  text-decoration: inherit;
-  flex: 1;
-}
-
-.docs-navbar {
-  display: none;
-}
-
 .docs-navbar-show-small {
   display: none;
-}
-
-.hero {
-  text-align: center;
-}
-
-.hero-content {
-  color: #fff;
-  padding-top: 130px;
-  line-height: 1;
-}
-
-.hero-title {
-  margin: 0;
-  // font-size: 100px;
-}
-
-.hero-content p {
-  font-size: 50px;
-  margin-bottom: 60px;
-}
-
-.hero-content img{
-  border-radius: 50%;
-  max-width: 220pxs;
 }
 
 /**
@@ -97,9 +59,6 @@
   }
   .docs-navbar-show-small {
     display: block;
-  }
-  .docs-navbar {
-    display: flex;
   }
   .docs-navbar--github-logo {
     margin: 0;

@@ -1,0 +1,44 @@
+$heart-size: 0.8rem;
+$heart-color: var(--acent-color);
+.heart {
+  margin: 0 0.8rem;
+  display: inline-block;
+  background-color: $heart-color;
+  height: $heart-size;
+  width: $heart-size;
+  transform: rotate(-45deg);
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.heart:after {
+  background-color: $heart-color;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: $heart-size;
+  height: $heart-size;
+  top: 0px;
+  left: $heart-size / 2;
+}
+
+.heart:before {
+  background-color: $heart-color;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: $heart-size;
+  height: $heart-size;
+  top: -($heart-size / 2);
+  left: 0px;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  50% {
+    transform: scale(0.6) rotate(-45deg);
+  }
+}

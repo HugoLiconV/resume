@@ -10,9 +10,9 @@ export class ProjectsComponent implements OnInit {
 
   projects: Project[];
   constructor() {
+    this.projects = PROJECTS;
   }
   ngOnInit() {
-    this.projects = PROJECTS;
   }
 
 }
