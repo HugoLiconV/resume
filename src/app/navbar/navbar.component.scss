@@ -26,6 +26,11 @@
   visibility: hidden;
 }
 
+button > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .docs-navbar,
 .docs-navbar-header {
   background-color: var(--main-color);
@@ -38,7 +43,7 @@
   padding: 8px 16px;
 }
 
-.docs-navbar-header > a {
+.docs-navbar-header>a {
   margin-left: auto;
 }
 
@@ -89,10 +94,12 @@
     opacity: 1;
   }
 }
+
 /**
   * Rules for when the device is detected to be a small screen.
   * Moves content two rows instead of one.
   */
+
 @media (max-width: 720px) {
   .docs-navbar-hide-small {
     display: none;

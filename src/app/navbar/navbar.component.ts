@@ -39,7 +39,6 @@ fadeAnimation(){
 
 scrollNav() {
   $('.docs-navbar-header a').click(function() {
-    console.log('clickeado');
     $('html, body')
       .stop()
       .animate(
