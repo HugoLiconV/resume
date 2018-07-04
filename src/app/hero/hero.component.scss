@@ -78,12 +78,13 @@ f .grid-container {
   height: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   /* align horizontal */
   align-items: center;
   padding: 1rem;
   p {
     line-height: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 100;
     letter-spacing: 1px;
     text-align: left;
