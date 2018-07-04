@@ -11,7 +11,7 @@ export class ContactComponent implements OnInit {
 
   contactItems: ContactItem[];
   constructor() {
-
+    this.contactItems = CONTACT_ITEMS;
   }
 
   getItemWidth(): string {
@@ -19,7 +19,6 @@ export class ContactComponent implements OnInit {
     return `${percent}%`;
   }
   ngOnInit() {
-    this.contactItems = CONTACT_ITEMS;
     this.getItemWidth();
   }
 

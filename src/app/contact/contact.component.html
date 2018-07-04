@@ -1,3 +1,4 @@
+<img class="bug" [src]="contactItems[0].iconUrl" alt="">
 <div class="container" id="contact">
   <div class="details">
     <p>Coded with <span><app-heart></app-heart></span>by Hugo Licon
@@ -5,7 +6,7 @@
   </div>
   <div class="social">
     <a class="support" >Contact Me</a>
-    <a [href]="contactItem.link" [style.width]="getItemWidth()" *ngFor="let contactItem of contactItems">
+     <a *ngFor="let contactItem of contactItems" [href]="contactItem.link" target="_blank" [style.width]="getItemWidth()" >
       <img [src]="contactItem.iconUrl" [alt]="contactItem.title + ' url'">
     </a>
   </div>
