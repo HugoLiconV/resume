@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
+// @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
 /* Landing container */
 
 #about {
@@ -8,24 +8,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
-  margin-top: 10vh
-}
-
-f .grid-container {
-  height: 100%;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 2px; // background-color: #2196F3;
-  @media (max-width: 600px) {
-    grid-template-columns: 100%;
-  }
-}
-
-.grid-container>div {
-  // background-color: rgba(255, 255, 255, 0.8);
-  text-align: center; // padding: 20px 0;
-  font-size: 30px;
+  margin-top: 10vh;
+  font-family: "Roboto";
 }
 
 .card-container {
@@ -33,8 +17,7 @@ f .grid-container {
   flex-direction: column;
   overflow: hidden;
   align-items: center;
-  justify-content: center;
-  // height: 100%;
+  justify-content: center; // height: 100%;
   img {
     border-radius: 50%;
     width: 250px;
@@ -47,6 +30,17 @@ f .grid-container {
     line-height: 3rem;
     color: var(--section-title-color);
   }
+  h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--body-color);
+    font-weight: 100;
+  }
+}
+
+.acent {
+  color: var(--acent-color);
 }
 
 .container {
@@ -62,7 +56,6 @@ f .grid-container {
   float: left;
   height: 100%;
   text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
