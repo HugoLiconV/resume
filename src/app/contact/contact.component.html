@@ -1,4 +1,6 @@
-<img class="bug" [src]="contactItems[0].iconUrl" alt="">
+<div *ngFor="let contactItem of contactItems">
+  <img class="bug" [src]="contactItem.iconUrl" alt="">
+</div>
 <div class="container" id="contact">
   <div class="details">
     <p>Coded with <span><app-heart></app-heart></span>by Hugo Licon
